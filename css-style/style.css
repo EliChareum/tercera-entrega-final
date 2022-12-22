@@ -1,0 +1,292 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*titulo*/
+body {
+  position: relative;
+  padding-bottom: 0;
+}
+
+#titulo {
+  background-color: cadetblue;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: cursive;
+  border-bottom: solid black;
+  width: 750px;
+  padding: 0px;
+  margin: auto;
+}
+
+/*fin del titulo*/
+/*bara de herramientas */
+nav {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* bara de herramientas */
+/* subtitulos */
+.sub_titulo {
+  color: cadetblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 400px;
+}
+
+/* fin de subtitulos */
+.img_index {
+  margin-left: 550px;
+  margin-bottom: 50px;
+  border: solid #5D6D7E 10px;
+  width: 750px;
+  height: 450px;
+}
+
+/* inicio de pagina contacto */
+#color_de_contacto {
+  background-color: #D4E6F1;
+}
+
+/* titulo */
+.pag_titulo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+/* titutlo */
+/* inicio de formulario */
+.contacto-formulario {
+  display: inline-block;
+  text-align: center;
+  margin-left: 800px;
+  margin-top: 20px;
+}
+.contacto-formulario .formulario_cajas, .contacto-formulario .formulario_cajas_ayuda {
+  display: flex;
+  margin: auto;
+  width: 300px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.formulario_boton {
+  width: 100px;
+  height: 50px;
+  background-color: #3498DB;
+  margin-bottom: 180px;
+  margin-top: 60px;
+}
+
+/* fin de formulario */
+/* fin de pagina contacto */
+/* color de fonde de ayuda */
+#color_de_ayuda {
+  background-color: #A9CCE3;
+}
+
+/* color de fondo de ayuda */
+/* formulario de ayuda */
+.formulario_cajas_ayuda {
+  margin-top: 30px;
+}
+
+/* inicio de pag ingredientes */
+/* fondo */
+#color_de_ingredientes {
+  background-color: #AED6F1;
+}
+
+/* fondo */
+/* ingredientes */
+.listado {
+  margin: auto;
+  margin-left: 750px;
+  margin-bottom: 80px;
+}
+.listado .listado_ing {
+  font-size: 20px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+/* fin de ingredientes */
+/* video */
+.exp_video {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 670px;
+  margin-bottom: 30px;
+}
+
+.video {
+  margin-left: 600px;
+  margin-bottom: 80px;
+}
+
+/* fin de pag ingredientes */
+/* incio de pag nosotros */
+/* fondo */
+#fondo_nosotros {
+  background-color: #D1F2EB;
+}
+
+/* parrafo */
+#texto {
+  width: 850px;
+  height: 200px;
+  text-align: center;
+  margin: 50px 0px 50px 550px;
+  background-color: #A3E4D7;
+}
+#texto #parrafo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* fin de parrafo */
+/* img */
+#img_formato {
+  display: flex;
+  justify-content: space-around;
+}
+#img_formato .img_nosotros {
+  width: 700px;
+  height: 400px;
+  border: solid #807DFA 8px;
+  margin-bottom: 80px;
+}
+
+/* pie de pagina */
+#mi_animacion {
+  animation: move 4s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-30%, 0);
+    color: #D6DBDF;
+  }
+  50% {
+    text-shadow: 0 25px 50px rgb(0, 0, 0);
+    color: #5D6D7E;
+  }
+  100% {
+    transform: translate(10%, 0);
+    color: #212F3C;
+  }
+}
+footer {
+  display: block;
+  padding: 20px;
+  background-color: #E09F9F;
+  border: solid black;
+  font-weight: bold;
+  width: 100%;
+  bottom: 0;
+  position: relative;
+}
+footer .pie_link {
+  display: inline;
+  margin-left: 400px;
+  padding: 10px;
+  border: double 2px rgb(106, 106, 202);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* fin de pie de pagina */
+/* pseudoclases */
+/* inicia el modelo celular */
+@media screen and (max-width: 479px) {
+  #titulo {
+    margin-top: 10px;
+    margin-left: 1px;
+    background-color: #CD5C5C;
+    font-size: 20px;
+    width: auto;
+    height: 30px;
+  }
+  .sub_titulo {
+    display: block;
+    font-size: 20px;
+    margin: 0%;
+  }
+  .sub_titulo #tamaño_sub-tit {
+    font-size: 10px;
+  }
+  .img_index {
+    display: block;
+    margin-left: 15px;
+    border: solid 5px #fa8787;
+    width: 300px;
+    height: 200px;
+  }
+  footer {
+    display: flex;
+    background-color: #ffc2c2;
+    width: 400px;
+    height: 100px;
+    margin-bottom: 0px;
+  }
+  footer #pie_link {
+    display: inline;
+    justify-content: start;
+  }
+  /* pagina ingredientes */
+  .pag_titulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 30px;
+  }
+  .listado {
+    margin: auto;
+    margin-left: 18px;
+    margin-bottom: 50px;
+  }
+  .exp_video {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-bottom: 10px;
+  }
+  .video {
+    margin-left: 8px;
+    margin-bottom: 10px;
+    width: auto;
+    height: auto;
+  }
+  /* pagina contacto */
+  #color_de_contacto {
+    background-color: #c5dbf7;
+  }
+  .contacto-formulario {
+    display: inline-block;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  .contacto-formulario .formulario_cajas, .contacto-formulario .formulario_cajas_ayuda {
+    display: flex;
+    margin: auto;
+    width: auto;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  .formulario_boton {
+    width: 60px;
+    height: 40px;
+    background-color: #5758a8;
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
